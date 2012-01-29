@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="TodoEntities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="TodoEntitiesContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TodoSet" EntityType="TodoEntities.Todo" />
+  </EntityContainer>
+  <EntityType Name="Todo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Order" Nullable="false" />
+    <Property Type="Boolean" Name="Done" Nullable="false" />
+    <Property Type="String" Name="Text" Nullable="false" />
+  </EntityType>
+</Schema>

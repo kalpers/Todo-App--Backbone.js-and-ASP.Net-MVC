@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TodoEntitiesStoreContainer" CdmEntityContainer="TodoEntitiesContainer">
+    <EntitySetMapping Name="TodoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(TodoEntities.Todo)">
+        <MappingFragment StoreEntitySet="TodoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Done" ColumnName="Done" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

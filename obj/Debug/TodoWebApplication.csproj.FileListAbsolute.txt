@@ -1,0 +1,7 @@
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\bin\TodoWebApplication.dll
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\bin\TodoWebApplication.pdb
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\bin\EntityFramework.dll
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\bin\EntityFramework.xml
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\obj\Debug\TodoWebApplication.dll
+D:\Development\Web\MVCTodoDemo\TodoDemo\TodoWebApplication\obj\Debug\TodoWebApplication.pdb

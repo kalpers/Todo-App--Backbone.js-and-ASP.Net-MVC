@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+    <title>Index</title>
+    <link href="../../Content/todos.css" rel="stylesheet" type="text/css" />    
+    <script data-main="../../Scripts/main" src="../../Scripts/libs/require/require.js"></script>
+</head>
+<body>
+    <div id="todoapp">
+        <div class="title">
+            <h1>
+                Todos</h1>
+        </div>
+        <div class="content">
+            <div id="create-todo">
+                <input id="new-todo" placeholder="What needs to be done?" type="text" />
+                <span class="ui-tooltip-top" style="display: none;">Press Enter to save this task</span>
+            </div>
+            <div id="todos">
+                <input class="check mark-all-done" type="checkbox" />
+                <label for="check-all">
+                    Mark all as complete</label>
+                <ul id="todo-list">
+                </ul>
+            </div>
+            <div id="todo-stats">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
