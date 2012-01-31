@@ -1,4 +1,4 @@
-      <div class="todo <%= done ? 'done' : '' %>">
+      <div class="todo <%= done ? 'done' : '' %>" <%= id ? 'data-id="'+id+'"' : '' %>>
         <div class="display">
           <input class="check" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
           <div class="todo-content"><%= text %></div>

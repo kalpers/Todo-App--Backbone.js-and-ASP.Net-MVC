@@ -116,6 +116,7 @@
     <Content Include="Scripts\libs\backbone\backbone-optamd3-min.js" />
     <Content Include="Scripts\libs\backbone\localstorage.js" />
     <Content Include="Scripts\libs\jquery\jquery-min.js" />
+    <Content Include="Scripts\libs\jquery\jquery-ui-min.js" />
     <Content Include="Scripts\libs\require\require.js" />
     <Content Include="Scripts\libs\require\text.js" />
     <Content Include="Scripts\libs\underscore\underscore-min.js" />

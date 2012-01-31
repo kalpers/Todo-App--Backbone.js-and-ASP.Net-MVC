@@ -3,15 +3,16 @@
 
 // Require.js allows us to configure shortcut alias
 require.config({
-  paths: {
-    jquery: 'libs/jquery/jquery-min',
-    underscore: 'libs/underscore/underscore-min',
-    backbone: 'libs/backbone/backbone-optamd3-min',
-    text: 'libs/require/text'
-  }
+    paths: {
+        jquery: 'libs/jquery/jquery-min',
+        jqueryui: 'libs/jquery/jquery-ui-min',
+        underscore: 'libs/underscore/underscore-min',
+        backbone: 'libs/backbone/backbone-optamd3-min',
+        text: 'libs/require/text'
+    }
 
 });
 
-require(['views/app'], function(AppView){
-  var app_view = new AppView;
+require(['views/app'], function (AppView) {
+    var app_view = new AppView;
 });

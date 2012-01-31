@@ -4,8 +4,9 @@ define([
   'backbone',
   'collections/todos',
   'views/todos',
-  'text!templates/stats.html'
-  ], function($, _, Backbone, Todos, TodoView, statsTemplate){
+  'text!templates/stats.html',
+  'jqueryui'
+  ], function($, _, Backbone, Todos, TodoView, statsTemplate, jqueryui){
   var AppView = Backbone.View.extend({
 
     // Instead of generating a new element, bind to the existing skeleton of
@@ -32,11 +33,22 @@ define([
       this.input    = this.$("#new-todo");
       this.allCheckbox = this.$(".mark-all-done")[0];
 
+      this.$("#todo-list").sortable({
+          update: function (event, ui) {
+              $('div.todo', this).each(function (i) {
+                  var id = $(this).attr('data-id'),
+                todo = Todos.get(id);
+                  todo.save({ order: i + 1 });
+              });
+          }
+      });
+
       Todos.bind('add',     this.addOne);
       Todos.bind('reset',   this.addAll);
       Todos.bind('all',     this.render);
 
       Todos.fetch();
+      
     },
 
     // Re-rendering the App just means refreshing the statistics -- the rest
