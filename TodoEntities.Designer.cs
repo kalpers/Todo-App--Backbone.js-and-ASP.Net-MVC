@@ -14,6 +14,7 @@ using System.Data.EntityClient;
 using System.ComponentModel;
 using System.Xml.Serialization;
 using System.Runtime.Serialization;
+//using System.ComponentModel.DataAnnotations;
 
 [assembly: EdmSchemaAttribute()]
 
@@ -210,6 +211,7 @@ namespace TodoWebApplication
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
+        //[MinLength(10)]
         public global::System.String Text
         {
             get
