@@ -1,0 +1,15 @@
+﻿<div>
+    <div><span>Todo ID: </span><input type="text" disabled="disabled" value='<%= id %>' style="width:20px;" />
+    <span>Order: </span><input type="text" disabled="disabled" value='<%= order %>' style="width:20px;" />
+    </div>
+    <div><span>Todo Text: </span><textarea cols="30" rows="3" disabled="disabled"><%= text %></textarea></div>
+    <div>
+        <span>Is Done: </span>
+        <% if (done) { %>
+            <input type="checkbox" checked="checked" disabled="disabled" />
+        <% } else { %>
+            <input type="checkbox" disabled="disabled" />
+        <% } %>
+    </div>
+    <div class="clickable"></div>
+</div>

@@ -147,13 +147,28 @@ body {
 	height: 20px;
 	background: url(destroy.png) no-repeat 0 0;
 }
+#todo-list .todo-moreinfo {
+	position: absolute;
+	right: 30px;
+	top: 14px;
+	display: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: url(moreinfo.png) no-repeat 0 0;
+}
 #todo-list li:hover .todo-destroy {
 	display: block;
 }
 #todo-list .todo-destroy:hover {
 	background-position: 0 -20px;
 }
-
+#todo-list li:hover .todo-moreinfo {
+	display: block;
+}
+#todo-list .todo-moreinfo:hover {
+	background-position: 0 -20px;
+}
 #todo-stats {
 	*zoom: 1;
 	margin-top: 10px;
@@ -420,6 +435,9 @@ body {
 #todoapp .content ul#todo-list li.editing .todo-destroy {
 	display: none !important;
 }
+#todoapp .content ul#todo-list li.editing .todo-moreinfo {
+	display: none !important;
+}
 /* line 85 */
 #todoapp .content ul#todo-list li .todo-input {
 	display: none;
@@ -440,6 +458,19 @@ body {
 #todoapp .content ul#todo-list li .todo-destroy {
 	position: absolute;
 	right: 0px;
+	top: 16px;
+	display: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+/* line 106 */
+#todoapp .content ul#todo-list li:hover .todo-moreinfo {
+	display: block;
+}
+#todoapp .content ul#todo-list li .todo-moreinfo {
+	position: absolute;
+	right: 30px;
 	top: 16px;
 	display: none;
 	cursor: pointer;

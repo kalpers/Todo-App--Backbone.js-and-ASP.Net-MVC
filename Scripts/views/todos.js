@@ -2,12 +2,15 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'views/tododetail',
   'text!templates/todos.html'
-  ], function ($, _, Backbone, todosTemplate) {
+  ], function ($, _, Backbone, TodoDetailsView, todosTemplate) {
       var TodoView = Backbone.View.extend({
 
           //... is a list tag.
           tagName: "li",
+
+          detailView: null,
 
           // Cache the template function for a single item.
           template: _.template(todosTemplate),
@@ -18,7 +21,8 @@ define([
               "dblclick div.todo-content": "edit",
               "click span.todo-destroy": "clear",
               "keypress .todo-input": "updateOnEnter",
-              "blur .todo-input": "close"
+              "blur .todo-input": "close",
+              "click span.todo-moreinfo": "viewdetails"
           },
 
           // The TodoView listens for changes to its model, re-rendering. Since there's
@@ -62,6 +66,12 @@ define([
           // Remove the item, destroy the model.
           clear: function () {
               this.model.clear();
+          },
+
+          viewdetails: function () {
+              this.detailView = this.detailView || new TodoDetailsView();
+              this.detailView.model = this.model
+              this.detailView.render();
           }
 
       });
